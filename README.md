@@ -273,6 +273,7 @@ while (not $done) {
  $params[cursorMark] = $results[nextCursorMark]
 } 
 ```
+Here is a very simple Python [script](src/python/queryIndex.py) to demonstrate search query using a curser mark. 
 
 #### Query Notes
 The Industry Documents Library (IDL) Solr server does not have the syntax sugar that the
