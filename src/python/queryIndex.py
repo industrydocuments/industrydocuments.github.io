@@ -34,7 +34,7 @@ start = timer()
 
 while not done:
 
-    res = urlopen('https://metadata.idl.ucsf.edu/solr/ltdl3/select?q='+query+'&wt=json&rows='+rows+'&sort=id+asc&'+fieldList+'cursorMark='+curserMark).read()
+    res = urlopen('https://metadata.idl.ucsf.edu/solr/ltdl3/query?q='+query+'&wt=json&rows='+rows+'&sort=id+asc&'+fieldList+'cursorMark='+curserMark).read()
     response = json.loads(res)
     nextCurserMark = response['nextCursorMark']
 
