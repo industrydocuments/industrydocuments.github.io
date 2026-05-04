@@ -1,6 +1,6 @@
 #
 # Very simple script to fetch records from the IDL Solr endpoint https://metadata.idl.ucsf.edu
-# Download endpoint is https://download.industrydocuments.ucsf.edu
+# Download endpoint is https://ucsf-idl-dataset.s3.us-east-1.amazonaws.com
 #
 #
 
@@ -61,7 +61,8 @@ while not done:
         #print (documentId)
         # Store the artifact metadata or use it directly to download:
         print ("Available artifacts (files): %s" %document.get('artifact','[]'))
-        print ("Base URL for the files: https://download.industrydocuments.ucsf.edu/%s/%s/%s/%s/%s" %(documentId[0],documentId[1],documentId[2],documentId[3],documentId))
+        print ("Base URL for the files: 
+https://ucsf-idl-dataset.s3.us-east-1.amazonaws.com/%s/%s/%s/%s/%s" %(documentId[0],documentId[1],documentId[2],documentId[3],documentId))
         # Use other metadata fields:
         #print ("Title: %s" %document.get('ti', "No Title"))
 
